@@ -5,7 +5,7 @@ import pandas as pd
 from splinter import Browser
 from bs4 import BeautifulSoup
 from selenium import webdriver
-import time
+import time 
 from webdriver_manager.chrome import ChromeDriverManager
 
 def scrape_all():

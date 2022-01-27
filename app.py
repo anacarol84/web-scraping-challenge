@@ -34,8 +34,10 @@ def scrapper():
     mars = mongo.db.mars
     mars_data = scrape_mars.scrape_all()
     mars.update({}, mars_data, upsert=True)
-    return "Scraping Successful"
+    return redirect("/")
+
 
 # Define Main Behavior
 if __name__ == "__main__":
     app.run()
+
